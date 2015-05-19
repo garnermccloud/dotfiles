@@ -1,19 +1,14 @@
 
-if [ -e ~/.conorbranagan/datadog ]
+if [ -e ~/dev/datadog/vm ]
 then
-    VM=/home/vagrant/workspace
-    source ~/dogweb/python/bin/activate
-    export DOGWEB_DEFAULT_CONFIG_PATH=$VM/dogweb/development.ini
+    VM=~/dev/datadog/vm
 
     # go env
     export GOPATH=$VM/go
-    export GOBIN=$GOPATH/bin
-    export DDGO=$GOPATH/src/github.com/DataDog/
-    export DD=$VM
-    export DOGWEB=$VM/dogweb/
+    export GOROOT=/usr/local/opt/go
+    export GOBIN=$GOROOT/bin
+    export DDGO=$GOPATH/src/github.com/DataDog/dd-go
 
     # path
-    export PATH=$PATH:$VM/dogweb/node_modules/.bin/:~/python/bin:/usr/local/go/bin/:$GOBIN
-
-    alias super="sudo supervisorctl"
+    export PATH=$PATH:$VM/dogweb/node_modules/.bin/:$GOBIN
 fi

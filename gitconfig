@@ -1,10 +1,9 @@
 [user]
-    name = Matt Perpick
-    email = matthewperpick@gmail.com
+    name = Conor Branagan
+    email = conorbranagan@gmail.com
 
 [alias]
     st = status -s
-    sti = status -s --ignored
     ci = commit
     br = branch
     co = checkout
@@ -16,8 +15,6 @@
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     tree = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
     f = "!git ls-files | grep -i"
-    destroy =  "!gd() { git branch -d $1 && git push origin :$1; }; gd"
-    conflicts = diff --name-only --diff-filter=U
 
 [core]
     whitespace = trailing-space,space-before-tab,cr-at-eol
@@ -27,4 +24,4 @@
     diff = true
 
 [push]
-    default = upstream
+    default = nothing

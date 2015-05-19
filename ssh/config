@@ -1,9 +1,9 @@
-Host stg
+Host staging
   HostName jumpbox.datad0g.com
-  User mattp
+  User conor
   ForwardAgent yes
 
 Host prod
   HostName jumpbox.datadoghq.com
-  User mattp
+  User conor
   ForwardAgent yes

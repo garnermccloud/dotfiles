@@ -12,23 +12,4 @@ alias_if_exists () {
 
 # Ubuntu aliases.
 alias_if_exists "ack-grep" "ack"
-alias_if_exists "gnome-open" "open"
-
-# ack shortcuts
-alias acka="ack --all"
-alias ackcss="ack --css"
-alias ackjava="ack --java"
-alias ackjs="ack --js"
-alias ackpy="ack --python"
-alias ackrb="ack --ruby"
-alias ackcoffee="ack --coffee"
-alias ackc="ack --cc"
-alias ackpyx="ack --cython"
-alias ackgo="ack --go"
-
-alias agpy="ag --python"
-alias agjs="ag --js"
-
-# Common directories
-alias code="cd ~/code"
-alias notes="cd ~/Dropbox/notes"
+alias_if_exists "ddev" "cd ~/dev/personal-chef && vagrant ssh"

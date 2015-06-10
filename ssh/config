@@ -1,9 +1,9 @@
 Host staging
   HostName jumpbox.datad0g.com
-  User conor
+  User garner
   ForwardAgent yes
 
 Host prod
   HostName jumpbox.datadoghq.com
-  User conor
+  User garner
   ForwardAgent yes

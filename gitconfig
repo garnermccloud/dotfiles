@@ -1,6 +1,6 @@
 [user]
     name = Garner Fox McCloud
-    email = garnermccloud@gmail.com
+    email = garner@datadoghq.com
 
 [alias]
     st = status -s
